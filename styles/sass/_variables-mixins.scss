@@ -1,0 +1,58 @@
+// VARIABLES
+
+$header-font: 'Alfa Slab One', cursive;
+$sub-header-font: 'Allerta Stencil', sans-serif;
+$primary-font: 'Nunito', sans-serif;
+    // font-family: 'Alfa Slab One', cursive;
+
+    // font-family: 'Allerta Stencil', sans-serif;
+
+    // font-family: 'Nunito', sans-serif;
+
+
+
+// MIXINS
+
+@mixin wrapper ($width) {
+    max-width: 1200px;
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin h1 ($size) {
+    font-family: $header-font;
+    font-size: $size;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    // color: white;
+    -webkit-text-stroke: 2px white;
+    text-shadow: -3px 3px 1px #B22A2E, -6px 6px 1px  dodgerblue, -9px 9px 3px #B22A2E;
+    // text-shadow: -4px 4px 1px  dodgerblue;
+}
+
+@mixin sub-header ($size) {
+    font-family: $sub-header-font;
+    text-transform: lowercase;
+}
+
+
+// SANDBOX
+.wrapper {
+    @include wrapper(90%);
+}
+
+h1 {
+    @include h1(4rem);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    @include sub-header(2rem)
+}
+
+p {
+    font-family: $primary-font;
+}
