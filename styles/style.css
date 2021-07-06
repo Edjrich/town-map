@@ -262,3 +262,113 @@ h5 {
 p {
   font-family: "Nunito", sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-container input {
+  width: 100%;
+}
+.form-container .textarea {
+  grid-column: 1/3;
+}
+.form-container .textarea textarea {
+  width: 100%;
+}
+.form-container .button-container {
+  text-align: center;
+  grid-column: 1/4;
+}
+.form-container input,
+.form-container button,
+.form-container textarea {
+  padding: 0.5em;
+}
+.form-container .input-container {
+  padding: 0.2em;
+}
+
+.directory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-container .about-text p {
+  margin: 1rem 0;
+}
+
+.current-skills h3 {
+  text-align: center;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.skill-grid li {
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.skill-grid li i {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.projects h3,
+h4 {
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+.project .project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project .project-list i {
+  font-size: 3rem;
+}
+.project .link-container {
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+// HEADER
+.directory {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+// ABOUT
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+
+    .about-image {
+    // width: 45%;
+    }
+
+    .about-text {
+        // width: 45%;
+        p {
+            margin: 1rem 0;
+        }
+    }
+
+}
+
+
+
+
+// SKILLS (that will hopefully eventually help pay the bills $_$)
+
+.current-skills h3 {
+    text-align: center;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    li {
+        text-align: center;
+        align-self: center;
+
+        i {
+        font-size: 5rem;
+        text-align: center;
+        }
+
+    }
+}
+
+// PROJECTS 
+
+.projects h3,
+h4 {
+    text-align: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.project {
+
+    .project-list{
+        display: flex;
+        justify-content: center;
+        i {
+            font-size: 3rem;
+        }
+    }
+    .link-container {
+        text-align: center;
+    }
+}
+
+

@@ -1,0 +1,32 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    input {
+        width: 100%;
+    }
+
+
+    .textarea {
+        grid-column: 1 / 3;
+        
+        textarea {
+            width: 100%;
+        }
+    }
+
+    .button-container{
+        text-align: center;
+        grid-column: 1 / 4;
+    }
+
+    input,
+    button,
+    textarea {
+        padding: .5em;
+    }
+    .input-container {
+        padding: .2em;
+    }
+
+}

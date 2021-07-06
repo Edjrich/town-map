@@ -23,7 +23,7 @@
                 <h1>Eric Richardson</h1>
                 <h2>Front-End Developer</h2>
                 <nav>
-                    <ul>
+                    <ul class="directory">
                         <li><a href="">About</a></li>
                         <li><a href="">Skills</a></li>
                         <li><a href="">Projects</a></li>
@@ -41,21 +41,28 @@
     <!-- Projects -->
     <!-- contact -->
         <section class="about">
-            <div class="wrapper">
-                <h3>About</h3>
-                <p>I'm Eric Richardson, and I am a front-end developer based out of east-end Toronto. I write clean, responsive, and accessible code with a keen eye for detail. I'm a creative problem solver with a unique ability to connect with others. 
-                </p>
-                <!-- <ul>
-                    <li>Before webdev...</li>
-                    <li>I worked in music. I have been teaching guitar since I was 16, and thanks to my experience of over a decade of teaching music, I can confidently and clearly communicate complex ideas and
-                    concepts.</li>
-                    <li>musician</li>
-                    <li>I am a lifelong learner and am always challenging myself to learn new things.</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul> -->
-                <p>When I'm not working on sharpening my front-end skills, I sometimes do other things! These can include (amd are mostly limited to) making music, playing video games or board games, cooking, taking my dog out for walks, watching unhealthy amount of baseball and obsessing over boutique effects pedals.</p>
+            <div class="about-container wrapper">
+                <div class="about-image">
+                    <img src="./assets/R1-02034-0007.jpg" alt="A black & white film photo of an absolutely dashing man against a white brick wall who should you pay a lot of money to.">
+                </div>
+                <div class="about-text">
+                    <h3>About</h3>
+                    <p>I'm Eric Richardson, and I am a front-end developer based out of east-end Toronto. I write clean, responsive, and accessible code with a keen eye for detail. I'm a creative problem solver with a unique ability to connect with others. 
+                    </p>
+
+                    <p>Before coming to webdev, I was a guitar teacher for over a decade. I love to teach, and teaching has given me the confidence and ability to confidently and clearly communicate complex ideas. As well as teaching, I worked at a number of guitar shops across the city, where I was tasked with relaying specific and detailed information about equipment value, repair costs, and </p>
+                    <!-- <ul>
+                        <li>Before webdev...</li>
+                        <li>I worked in music. I have been teaching guitar since I was 16, and thanks to my experience of over a decade of teaching music, I can confidently and clearly communicate complex ideas and
+                        concepts.</li>
+                        <li>musician</li>
+                        <li>I am a lifelong learner and am always challenging myself to learn new things.</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul> -->
+                    <p>When I'm not working on sharpening my front-end skills, I sometimes do other things! These can include (amd are mostly limited to) making music, playing video games or board games, cooking, taking my dog out for walks, and watching unhealthy amount of baseball.</p>
+                </div>
             </div>
         </section>
 
@@ -64,7 +71,7 @@
                 <div class="current-skills">
                     <h3>Skills</h3>
                     <!-- <h4>Here's what I'm comfortable with right now, but </h4> -->
-                    <ul>
+                    <ul class="skill-grid">
                         <!-- put those rinky dink icons here. maybe add a hover effect with text and a box shadow -->
                         <li><i class="fab fa-html5"></i></li>
                         <li><i class="fab fa-css3-alt"></i></li>
@@ -79,6 +86,7 @@
                         <li><i class="fas fa-cogs"></i></li>
                         <!-- api -->
                         <li><i class="fas fa-user-friends"></i></li>
+                        <li><i class="fas fa-universal-access"></i></li>
                         <li><i class="fas fa-terminal"></i></li>
                         <li>More to come...</li>
                     </ul>
@@ -99,65 +107,84 @@
             <div class="wrapper">
                 <h3>Projects</h3>
                 <h4>A few things I've worked on. More to come, as I'm always working on something new!</h4>
-                <div class="project">
-                    <h4>What Do You Know</h4>
-                    <p>A word game where you are presented with two randomly generated homophonous words - like piece and peace - and a single definition. Users try to match the correct homophone to the definition.</p>
-                    <ul>
-                        <li>React</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>SASS</li>
-                        <li>JavaScript</li>
-                        <li>REST API</li>
-                        <li>Firebase</li>
-                    </ul>
-                    <p>Created in collaboration with Aaron, Nicole, & Michelle.</p>
-                    <a href="">Live Site</a>
-                    <a href="">Github</a>
-                </div>
-    
-                <div class="project">
-                    <h4>Cocktail Curator</h4>
-                    <p>An app that makes makes drink suggestions based off of spirts you have on hand. </p>
-                    <ul>
-                        <li>React</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>REST API</li>
-                    </ul>
-                    <a href="">Live Site</a>
-                    <a href="">Github</a>
-                </div>
-                <div class="project">
-                    <h4>A Night In</h4>
-                    <p>An app to help eliminate the stress of the hardest part of movie night. This app makes a suggestion of a movie based on you preference of genre, and how much time you have.</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>SASS</li>
-                        <li>JavaScript</li>
-                        <li>REST API</li>
-
-                    </ul>
-                    <p>Created in collaboration with Syedah Maham Naz.</p>
-
-                    <a href="">Live Site</a>
-                    <a href="">Github</a>
-                </div>
-                <div class="project">
-                    <h4>Wiki Wizard</h4>
-                    <p>It's a wiki races game! A juno con-ed javascript class favourite. A <span>very silly</span> project that generates two links to different wikipedia pages. This was the first project that I had a lot of fun with.</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>SASS</li>
-                        <li>JavaScript</li>
-                        <li>JQuery</li>
-                        <li>REST API</li>
-                    </ul>
-                    <a href="">Live Site</a>
-                    <a href="">Github</a>
+                <div class="project-container">
+                    <div class="project">
+                        <h4>What Do You Know</h4>
+                        <div class="project-image">
+                            <img src="https://placekeanu.com/50/50/y" alt="">
+                        </div>
+                        <p>A word game where you are presented with two randomly generated homophonous words - like piece and peace - and a single definition. Users try to match the correct homophone to the definition.</p>
+                        <p>Created in collaboration with Aaron, Nicole, & Michelle.</p>
+                        <ul class="project-list">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="devicon-sass-original"></i></li>
+                            <li><i class="fab fa-react"></i></li>
+                            <li><i class="fab fa-js-square"></i></li>
+                            <li><i class="fas fa-cogs"></i></li>
+                            <li><i class="devicon-firebase-plain"></i></li>
+                        </ul>
+                        <div class="link-container">
+                            <a href="">Live Site</a>
+                            <a href="">Github</a>
+                        </div>
+                    </div>
+        
+                    <div class="project">
+                        <h4>Cocktail Curator</h4>
+                        <div class="project-image">
+                            <img src="https://placekeanu.com/100/100/y" alt="">
+                        </div>
+                        <p>An app that makes makes drink suggestions based off of spirts you have on hand. Pulls a list of drinks from an API, and then gives the recipe. Inspired by real world situations.</p>
+                        <ul class="project-list">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-react"></i></li>
+                            <li><i class="fab fa-js-square"></i></li>
+                            <li><i class="fas fa-cogs"></i></li>
+                        </ul>
+                        <div class="link-container">
+                            <a href="">Live Site</a>
+                            <a href="">Github</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h4>A Night In</h4>
+                        <div class="project-image">
+                            <img src="https://placekeanu.com/50/50/y" alt="">
+                        </div>
+                        <p>An app to help eliminate the stress of the hardest part of movie night. A night in makes a suggestion of a movie based on you preference of genre, and how much time you have.</p>
+                        <p>Created in collaboration with Syedah Maham Naz.</p>
+                        <ul class="project-list">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="devicon-sass-original"></i></li>
+                            <li><i class="fab fa-js-square"></i></li>
+                            <li><i class="fas fa-cogs"></i></li>
+                        </ul>
+                        <div class="link-container">
+                            <a href="">Live Site</a>
+                            <a href="">Github</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h4>Wiki Wizard</h4>
+                        <div class="project-image">
+                            <img src="https://placekeanu.com/50/50/y" alt="">
+                        </div>
+                        <p>It's a wiki races game! A juno con-ed javascript class favourite. A <span>very silly</span> project that generates two links to different wikipedia pages. This was the first project that I had a lot of fun with. I've improved a lot since then, but it's easy to see why I had fun with it.</p>
+                        <ul class="project-list">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-js-square"></i></li>
+                            <li><i class="devicon-jquery-plain"></i></li>
+                            <li><i class="fas fa-cogs"></i></li>
+                        </ul class="project-list">
+                        <div class="link-container">
+                            <a href="">Live Site</a>
+                            <a href="">Github</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,19 +193,29 @@
             <div class="wrapper">
                 <div class="contact-text">
                     <h3>Contact me</h3>
-                    <p>Like what you see? Drop me a line and we can talk about fuzz pedals, sabermetrics, EarthBound, aggreisve tupyos or EVEN WEB DEVELOPMENT?!?!?!</p>
+                    <p>Want to chat? Drop me a line and we can talk about fuzz pedals, sabermetrics, EarthBound, aggreisve tupyos or EVEN WEB DEVELOPMENT?!?!?!</p>
     
                     <p>It's your call. (or email, get it!?)</p>
                 </div>
-                <form action="">
-                    <label for="name"></label>
-                    <input type="text" name="name" placeholder="Your Name?">
+                <form class="form-container" action="">
+                    <div class="input-container">
+                        <label for="name"></label>
+                        <input type="text" name="name" placeholder="Your Name?">
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="Your email?">
+                    </div>
     
-                    <label for="email"></label>
-                    <input type="email" name="email" placeholder="Your email?">
-    
-                    <label for="message"></label>
-                    <textarea id="message" name="message" placeholder="Your thoughts?" rows="5"></textarea>
+                    <div class="input-container textarea">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Your thoughts?" rows="5"></textarea>
+                    </div>
+
+                    <div class="button-container">
+                        <button>submit</button>
+                    </div>
                 </form>
             </div>
         </section>
