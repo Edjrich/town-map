@@ -2,23 +2,61 @@
 .directory {
     display: flex;
     justify-content: space-around;
+    a {
+        color: #F0802C;
+        
+    }
+}
+
+header {
+    background-color: #050936;
+    height: 70vh;
+    color: #F0802C;
+    text-align: center;
 }
 
 
 // ABOUT
 
+.box-box {
+    box-shadow: -5px 5px 20px #00000071;
+    // padding: 5rem 1rem;
+    border-radius: 1em;
+    max-width: 1250px;
+    margin: 5rem auto;
+    width: 95%;
+}
+
+.about {
+    padding: 4em 0;
+    // background-color: #F0E1A8;
+    // color: #050936;
+    // background-color: #050936;
+    // color: #f0e1a8;
+}
+
 .about-container {
+    padding: 2em 0;
     display: flex;
     justify-content: space-between;
+    // box-shadow: -5px 5px 20px #00000071;
+    // padding: 5rem 1rem;
+    // border-radius: 1em;
 
     .about-image {
-    // width: 45%;
+    width: 48%;
+
+    img {
+        border-radius: 1em;
+        // height auto fixes SMUSH
+    }
     }
 
     .about-text {
-        // width: 45%;
+        width: 50%;
         p {
             margin: 1rem 0;
+            font-size: 1.3em;
         }
     }
 
@@ -29,21 +67,35 @@
 
 // SKILLS (that will hopefully eventually help pay the bills $_$)
 
-.current-skills h3 {
-    text-align: center;
+.skills {
+    padding: 4rem 0;
+    // background-color: #050936;
+    // color: #F0E1A8;
 }
 
+// .current-skills h3 {
+//     text-align: center;
+//     margin: 1rem auto;
+//     width: 20rem;
+//     border-radius: 1rem 0;
+//     padding: 1.5rem;
+//     background-color: #F0E1A8;
+// }
+
 .skill-grid {
+    // background-color: #050936;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     li {
         text-align: center;
         align-self: center;
+        margin: 1em;
 
         i {
         font-size: 5rem;
         text-align: center;
+        text-shadow: -4px 4px #F0802C69 ;
         }
 
     }
@@ -51,9 +103,19 @@
 
 // PROJECTS 
 
-.projects h3,
-h4 {
+.projects {
+    padding: 8em 0;
+    // background-color: #F0E1A8;
+    // color: #050936;
+}
+
+.project-text-container h3 {
     text-align: center;
+}
+
+.project-text-container h3 {
+    font-size: 3rem;
+    margin: 3rem;
 }
 
 .project-container {
@@ -64,17 +126,85 @@ h4 {
 }
 
 .project {
+    box-shadow: 1px 1px 10px #00000071;
+    // background-color: #050936;
+    // color: #F0E1A8;
+    // min-height: 22rem;
+    border-radius: 1em;
+
+    h4 {
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+    p {
+        padding: .7em;
+        font-size: 1.3em;
+    }
 
     .project-list{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: .5em;
         i {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            text-shadow: -3px 2px #F0802C69;
         }
     }
     .link-container {
         text-align: center;
+        padding: 1em 0;
     }
 }
 
+// CONTACT
+
+.contact {
+    // background-color: #F0E1A8;
+    color: #050936;
+}
+
+.contact-container {
+    box-shadow: -5px 5px 20px #00000071;
+    // padding: 5rem 1rem;
+    border-radius: 1em;
+    max-width: 1250px;
+    margin: 2rem auto;
+    padding: 5rem auto;
+    width: 95%;
+}
+
+.contact-text {
+
+
+
+    h3{
+        text-align: center;
+    }
+}
+
+input,
+textarea,
+button {
+    // background-color: #050936;
+    // color: #F0E1A8;
+    // border-bottom: 3px solid #050936;
+    // background-color: #F0E1A8;
+    border: none;
+    // border-right: 2px solid #050936;
+    // border-top: 2px solid #050936;
+    // box-shadow: #050936 -4px 4px 0px;
+}
+
+button {
+    background-color: #050936;
+    color: #F0E1A8
+}
+
+
+html {
+    // background-color: #F0E1A8;
+    color: #050936;
+}
 

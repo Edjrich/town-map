@@ -1,13 +1,17 @@
 // VARIABLES
 
-$header-font: 'Alfa Slab One', cursive;
-$sub-header-font: 'Allerta Stencil', sans-serif;
-$primary-font: 'Nunito', sans-serif;
+$header-font: 'Righteous', cursive;
+$sub-header-font: 'Righteous', cursive;
+$primary-font: 'Raleway', sans-serif;
     // font-family: 'Alfa Slab One', cursive;
 
     // font-family: 'Allerta Stencil', sans-serif;
 
     // font-family: 'Nunito', sans-serif;
+
+    // font-family: 'Raleway', sans-serif;
+
+    // font-family: 'Righteous', cursive;
 
 
 
@@ -21,20 +25,35 @@ $primary-font: 'Nunito', sans-serif;
 
 @mixin h1 ($size) {
     font-family: $header-font;
+    // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: $size;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.05em;
     // color: white;
-    -webkit-text-stroke: 2px white;
-    text-shadow: -3px 3px 1px #B22A2E, -6px 6px 1px  dodgerblue, -9px 9px 3px #B22A2E;
+    // -webkit-text-stroke: 2px white;
+    // text-shadow: -3px 3px 1px #B22A2E, -6px 6px 1px  dodgerblue, -9px 9px 3px #B22A2E;
     // text-shadow: -4px 4px 1px  dodgerblue;
 }
 
-@mixin sub-header ($size) {
-    font-family: $sub-header-font;
-    text-transform: lowercase;
+@mixin section-heading {
+    font-size: 3.5rem;
+    letter-spacing: .15em;
+    font-family: $header-font;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem auto;
+    width: 20rem;
+    border-radius: 1rem 0;
+    padding: 1.5rem;
+    background-color: #F0E1A8;
 }
+
+// @mixin sub-header ($size) {
+//     font-family: $header-font;
+//     // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//     text-transform: uppercase;
+// }
 
 
 // SANDBOX
@@ -46,13 +65,36 @@ h1 {
     @include h1(4rem);
 }
 
-h2,
-h3,
-h4,
-h5 {
-    @include sub-header(2rem)
+h3 {
+    @include section-heading();
+    text-shadow: -3px 3px #F0802C;
+    // text-shadow: -2px 2px #F0802C, -4px 4px 1px  #B52737, -6px 6px 1px #D35E5433, -8px 8px #F0E1A811;
+    // text-shadow: -5px 5px #B52737;
+    // text-shadow: -6px 6px 1px #D35E54;
+}
+
+h4 {
+    font-size: 3.5rem;
+    letter-spacing: .15em;
+    font-family: $header-font;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -2px 2px #F0802C;
+
 }
 
 p {
     font-family: $primary-font;
+}
+
+
+a {
+    padding: 1em;
+    margin: 1em;
+    background-color: #050936;
+    color: #F0802C;
+    border-radius: .5em;
+    box-shadow: -5px 5px #F0802C;
+    font-family: $primary-font;
+    text-transform: uppercase;
 }
