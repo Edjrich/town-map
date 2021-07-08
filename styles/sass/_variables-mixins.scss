@@ -42,11 +42,11 @@ $primary-font: 'Raleway', sans-serif;
     font-family: $header-font;
     text-transform: uppercase;
     text-align: center;
-    margin: 1rem auto;
-    width: 20rem;
+    margin: 2rem auto;
+    // width: 20rem;
     border-radius: 1rem 0;
-    padding: 1.5rem;
-    background-color: #F0E1A8;
+    // padding: 1.5rem;
+    // background-color: #F0E1A8;
 }
 
 // @mixin sub-header ($size) {
@@ -67,19 +67,23 @@ h1 {
 
 h3 {
     @include section-heading();
-    text-shadow: -3px 3px #F0802C;
+    color: #742e12;
+    text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+    // text-decoration: underline;
     // text-shadow: -2px 2px #F0802C, -4px 4px 1px  #B52737, -6px 6px 1px #D35E5433, -8px 8px #F0E1A811;
     // text-shadow: -5px 5px #B52737;
     // text-shadow: -6px 6px 1px #D35E54;
 }
 
 h4 {
+    color: #742e12;
+    text-shadow: -1px 2px #d28a2d, -3px 4px #2f6c68;
     font-size: 3.5rem;
     letter-spacing: .15em;
     font-family: $header-font;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: -2px 2px #F0802C;
+    // text-shadow: -2px 2px black;
 
 }
 
@@ -91,10 +95,13 @@ p {
 a {
     padding: 1em;
     margin: 1em;
-    background-color: #050936;
-    color: #F0802C;
+    background-color: #d28a2d;
+    color: #742e12;
     border-radius: .5em;
-    box-shadow: -5px 5px #F0802C;
+    box-shadow: -5px 5px #2f6c68;
     font-family: $primary-font;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.215rem;
 }

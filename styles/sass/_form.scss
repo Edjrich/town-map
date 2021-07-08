@@ -1,6 +1,7 @@
 .form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
 
     input {
         width: 100%;
@@ -23,7 +24,8 @@
     input,
     button,
     textarea {
-        padding: .5em;
+        padding: .75em;
+        box-shadow: -5px 5px #d28a2d;
     }
     .input-container {
         padding: .2em;

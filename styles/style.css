@@ -255,21 +255,20 @@ h3 {
   font-family: "Righteous", cursive;
   text-transform: uppercase;
   text-align: center;
-  margin: 1rem auto;
-  width: 20rem;
+  margin: 2rem auto;
   border-radius: 1rem 0;
-  padding: 1.5rem;
-  background-color: #F0E1A8;
-  text-shadow: -3px 3px #F0802C;
+  color: #742e12;
+  text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
 }
 
 h4 {
+  color: #742e12;
+  text-shadow: -1px 2px #d28a2d, -3px 4px #2f6c68;
   font-size: 3.5rem;
   letter-spacing: 0.15em;
   font-family: "Righteous", cursive;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: -2px 2px #F0802C;
 }
 
 p {
@@ -279,13 +278,16 @@ p {
 a {
   padding: 1em;
   margin: 1em;
-  background-color: #050936;
-  color: #F0802C;
+  background-color: #d28a2d;
+  color: #742e12;
   border-radius: 0.5em;
-  -webkit-box-shadow: -5px 5px #F0802C;
-          box-shadow: -5px 5px #F0802C;
+  -webkit-box-shadow: -5px 5px #2f6c68;
+          box-shadow: -5px 5px #2f6c68;
   font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.215rem;
 }
 
 *, h1 {
@@ -299,7 +301,7 @@ li {
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 a {
@@ -309,6 +311,7 @@ a {
 .form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
 }
 .form-container input {
   width: 100%;
@@ -326,7 +329,9 @@ a {
 .form-container input,
 .form-container button,
 .form-container textarea {
-  padding: 0.5em;
+  padding: 0.75em;
+  -webkit-box-shadow: -5px 5px #d28a2d;
+          box-shadow: -5px 5px #d28a2d;
 }
 .form-container .input-container {
   padding: 0.2em;
@@ -339,32 +344,25 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.directory a {
-  color: #F0802C;
-}
 
 header {
-  background-color: #050936;
   height: 70vh;
-  color: #F0802C;
   text-align: center;
 }
 
-.box-box {
-  -webkit-box-shadow: -5px 5px 20px #00000071;
-          box-shadow: -5px 5px 20px #00000071;
+.color-container {
+  background-color: #bfbda2;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
   border-radius: 1em;
-  max-width: 1250px;
-  margin: 5rem auto;
-  width: 95%;
-}
-
-.about {
-  padding: 4em 0;
+  padding: 3.5rem 0;
+  margin-bottom: 12rem;
+  -webkit-box-shadow: 0px 0px 10px #00000050;
+          box-shadow: 0px 0px 10px #00000050;
 }
 
 .about-container {
-  padding: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,10 +371,18 @@ header {
           justify-content: space-between;
 }
 .about-container .about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 48%;
 }
 .about-container .about-image img {
   border-radius: 1em;
+  -webkit-box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
+          box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
 }
 .about-container .about-text {
   width: 50%;
@@ -384,10 +390,6 @@ header {
 .about-container .about-text p {
   margin: 1rem 0;
   font-size: 1.3em;
-}
-
-.skills {
-  padding: 4rem 0;
 }
 
 .skill-grid {
@@ -404,11 +406,13 @@ header {
 .skill-grid li i {
   font-size: 5rem;
   text-align: center;
-  text-shadow: -4px 4px #F0802C69;
+  color: #2f6c68;
+  text-shadow: -3px 2px #d28a2d;
+  -webkit-text-stroke: 1px #742e12;
 }
 
 .projects {
-  padding: 8em 0;
+  margin-bottom: 12rem;
 }
 
 .project-text-container h3 {
@@ -424,21 +428,23 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1em;
+  gap: 5em;
 }
 
 .project {
   -webkit-box-shadow: 1px 1px 10px #00000071;
           box-shadow: 1px 1px 10px #00000071;
+  background-color: #bfbda2;
   border-radius: 1em;
+  padding: 1.5em 0;
 }
 .project h4 {
   font-size: 2rem;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0 0.2em 1.5rem;
 }
 .project p {
-  padding: 0.7em;
+  padding: 1.5em 0.7em;
   font-size: 1.3em;
 }
 .project .project-list {
@@ -448,11 +454,11 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0.5em;
+  padding: 1em;
 }
-.project .project-list i {
-  font-size: 2.5rem;
-  text-shadow: -3px 2px #F0802C69;
+.project .project-list li {
+  padding: 1em;
+  font-family: "Raleway", sans-serif;
 }
 .project .link-container {
   text-align: center;
@@ -476,18 +482,35 @@ header {
 .contact-text h3 {
   text-align: center;
 }
-
-input,
-textarea,
-button {
-  border: none;
+.contact-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3em;
+  color: black;
+  padding: 1.5rem 0;
 }
 
-button {
-  background-color: #050936;
-  color: #F0E1A8;
+input,
+textarea {
+  background-color: #bfbda2;
+  border: 2.5px solid #2f6c68;
+}
+
+.footer-container {
+  text-align: center;
+  background-color: #bfbda2;
+  padding: 1rem;
+  border-radius: 1em 1em 0 0;
+}
+.footer-container p {
+  color: #742e12;
+  text-shadow: -1px 1px #d28a2d, -2px 2px #2f6c68;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 html {
-  color: #050936;
+  background-color: #2f6c68;
 }

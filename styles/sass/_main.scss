@@ -2,52 +2,69 @@
 .directory {
     display: flex;
     justify-content: space-around;
-    a {
-        color: #F0802C;
+    // a {
+    //     // color: #F0802C;
         
-    }
+    // }
 }
 
 header {
-    background-color: #050936;
+    // background-color: #050936;
     height: 70vh;
-    color: #F0802C;
+    // color: #F0802C;
     text-align: center;
 }
 
 
 // ABOUT
 
-.box-box {
-    box-shadow: -5px 5px 20px #00000071;
-    // padding: 5rem 1rem;
-    border-radius: 1em;
-    max-width: 1250px;
-    margin: 5rem auto;
-    width: 95%;
-}
+// .box-box {
+//     // box-shadow: -5px 5px 20px #00000071;
+//     // // padding: 5rem 1rem;
+//     // border-radius: 1em;
+//     max-width: 1250px;
+//     margin: 0 auto;
+//     // width: 95%;
+//     background-color: #bfbda2;
+// }
 
-.about {
-    padding: 4em 0;
-    // background-color: #F0E1A8;
-    // color: #050936;
-    // background-color: #050936;
-    // color: #f0e1a8;
+// .about {
+//     padding: 4em 0;
+//     // background-color: #F0E1A8;
+//     // color: #050936;
+//     // background-color: #050936;
+//     // color: #f0e1a8;
+// }
+
+.color-container {
+    background-color: #bfbda2;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding: 3.5rem 0;
+    margin-bottom: 12rem;
+    box-shadow: 0px 0px 10px #00000050;
 }
 
 .about-container {
-    padding: 2em 0;
+    // padding: 2em 0;
     display: flex;
     justify-content: space-between;
+    // background-color: #bfbda2;
     // box-shadow: -5px 5px 20px #00000071;
     // padding: 5rem 1rem;
     // border-radius: 1em;
 
     .about-image {
-    width: 48%;
+        display: flex;
+        align-items: center;
+        width: 48%;
 
     img {
         border-radius: 1em;
+        // box-shadow: -5px 5px 10px #d28a2d;
+        box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
         // height auto fixes SMUSH
     }
     }
@@ -67,11 +84,11 @@ header {
 
 // SKILLS (that will hopefully eventually help pay the bills $_$)
 
-.skills {
-    padding: 4rem 0;
-    // background-color: #050936;
-    // color: #F0E1A8;
-}
+// .skills {
+//     padding: 4rem 0;
+//     // background-color: #050936;
+//     // color: #F0E1A8;
+// }
 
 // .current-skills h3 {
 //     text-align: center;
@@ -95,7 +112,9 @@ header {
         i {
         font-size: 5rem;
         text-align: center;
-        text-shadow: -4px 4px #F0802C69 ;
+        color: #2f6c68;
+        text-shadow: -3px 2px #d28a2d;
+        -webkit-text-stroke: 1px #742e12;
         }
 
     }
@@ -104,7 +123,7 @@ header {
 // PROJECTS 
 
 .projects {
-    padding: 8em 0;
+    margin-bottom: 12rem;
     // background-color: #F0E1A8;
     // color: #050936;
 }
@@ -122,35 +141,46 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1em;
+    gap: 5em;
 }
 
 .project {
     box-shadow: 1px 1px 10px #00000071;
-    // background-color: #050936;
+    background-color: #bfbda2;
     // color: #F0E1A8;
     // min-height: 22rem;
     border-radius: 1em;
+    padding: 1.5em 0;
 
     h4 {
             font-size: 2rem;
             text-align: center;
-            padding: 1rem 0;
+            padding: 0 .2em 1.5rem;
         }
 
     p {
-        padding: .7em;
+        padding: 1.5em .7em;
         font-size: 1.3em;
     }
 
     .project-list{
         display: flex;
         justify-content: space-evenly;
-        padding: .5em;
-        i {
-            font-size: 2.5rem;
-            text-shadow: -3px 2px #F0802C69;
+        padding: 1em;
+        li {
+            // border: 1px solid #2f6c68;
+            padding: 1em;
+            font-family: $primary-font;
+            
         }
+        // border: 1px solid #2f6c68;
+        // i {
+        //     font-size: 2.5rem;
+        //     color: #2f6c68;
+        //     text-shadow: -1px 1px #d28a2d;
+        //     -webkit-text-stroke: 1px #742e12;
+        //     // text-shadow: -3px 2px #F0802C69;
+        // }
     }
     .link-container {
         text-align: center;
@@ -176,35 +206,59 @@ header {
 }
 
 .contact-text {
-
-
-
     h3{
         text-align: center;
+    }
+    p {
+        font-family: $primary-font;
+        font-size: 1.3em;
+        color: black;
+        padding: 1.5rem 0;
     }
 }
 
 input,
-textarea,
-button {
-    // background-color: #050936;
+textarea {
+    background-color: #bfbda2;
     // color: #F0E1A8;
     // border-bottom: 3px solid #050936;
     // background-color: #F0E1A8;
-    border: none;
-    // border-right: 2px solid #050936;
-    // border-top: 2px solid #050936;
+    // border: none;
+    // border-left: 2px solid #2f6c68;
+    // border-bottom: 2px solid #2f6c68;
+    border: 2.5px solid #2f6c68;
     // box-shadow: #050936 -4px 4px 0px;
 }
 
-button {
-    background-color: #050936;
-    color: #F0E1A8
+// button {
+//     background-color: #050936;
+//     // color: #F0E1A8
+// }
+
+
+// FOOTER
+
+.footer-container {
+    text-align: center;
+    background-color: #bfbda2;
+    padding: 1rem;
+    border-radius: 1em 1em 0 0;
+    // max-width: 1400px;
+    // margin: 0 auto;
+    p {
+        color: #742e12;
+        text-shadow: -1px 1px #d28a2d, -2px 2px #2f6c68;
+        font-size: 1.5rem;
+        letter-spacing: .15em;
+        font-family: $header-font;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 
 html {
-    // background-color: #F0E1A8;
-    color: #050936;
+    background-color: #2f6c68;
+    // color: #050936;
 }
 
