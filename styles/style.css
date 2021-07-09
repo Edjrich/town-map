@@ -241,6 +241,11 @@ html {
   margin: 0 auto;
 }
 
+.jumbo-wrapper {
+  width: 95%;
+  margin: auto;
+}
+
 h1 {
   font-family: "Righteous", cursive;
   color: #742e12;
@@ -248,7 +253,8 @@ h1 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.05em;
-  text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+  text-shadow: -4px 4px #d28a2d, -7px 7px #bfbda2;
+  padding: 0.1em;
 }
 
 h2 {
@@ -258,7 +264,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.05em;
-  text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+  text-shadow: -4px 4px #d28a2d, -7px 7px #bfbda2;
   text-shadow: -2px 2px 1px #d28a2d, -4px 4px 2px #2f6c68;
 }
 
@@ -286,6 +292,7 @@ h4 {
 
 p {
   font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
 }
 
 .button {
@@ -301,6 +308,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.215rem;
+}
+
+html {
+  font-size: 125%;
 }
 
 *, h1 {
@@ -405,7 +416,7 @@ h1 {
 }
 
 header {
-  height: 80vh;
+  min-height: 50vh;
   text-align: center;
 }
 
@@ -415,8 +426,8 @@ header {
   width: 90%;
   margin: 0 auto;
   border-radius: 1em;
-  padding: 3.5rem 0;
-  margin-bottom: 12rem;
+  padding: 2.5rem 0;
+  margin-bottom: 10rem;
   -webkit-box-shadow: 0px 0px 10px #00000050;
           box-shadow: 0px 0px 10px #00000050;
 }
@@ -449,12 +460,11 @@ header {
 }
 .about-container .about-text p {
   margin: 1rem 0;
-  font-size: 1.3em;
 }
 
 .skill-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .skill-grid li {
@@ -472,23 +482,18 @@ header {
 }
 
 .projects {
-  margin-bottom: 12rem;
+  margin-bottom: 10rem;
 }
 
 .project-text-container h3 {
   text-align: center;
 }
 
-.project-text-container h3 {
-  font-size: 3rem;
-  margin: 3rem;
-}
-
 .project-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 5em;
+  gap: 3.5em;
 }
 
 .project {
@@ -505,7 +510,6 @@ header {
 }
 .project p {
   padding: 1.5em 0.7em;
-  font-size: 1.3em;
 }
 .project .project-list {
   display: -webkit-box;
@@ -544,7 +548,6 @@ header {
 }
 .contact-text p {
   font-family: "Raleway", sans-serif;
-  font-size: 1.3em;
   color: black;
   padding: 1.5rem 0;
 }
@@ -573,4 +576,255 @@ textarea {
 
 html {
   background-color: #2f6c68;
+}
+
+@media (max-width: 1200px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3em;
+  }
+}
+@media (max-width: 1197px) {
+  h1 {
+    margin: 3rem auto;
+  }
+}
+@media (max-width: 1100px) {
+  .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-container .about-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-container .about-image img {
+    width: 80%;
+    border-radius: 1em;
+    -webkit-box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
+            box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
+  }
+  .about-container .about-text {
+    width: 100%;
+  }
+  .about-container .about-text p {
+    margin: 1rem 0;
+  }
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .project-container {
+    gap: 2em;
+  }
+}
+@media (max-width: 926px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .color-container {
+    padding: 2rem 0;
+    margin-bottom: 8rem;
+  }
+
+  .projects {
+    margin-bottom: 8rem;
+  }
+
+  h1 {
+    margin: 2rem auto;
+    font-size: 5rem;
+  }
+
+  h2,
+h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.7rem;
+  }
+
+  .skill-grid li i {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 775px) {
+  .skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .skill-grid li {
+    text-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 1em;
+  }
+  .skill-grid li i {
+    font-size: 4rem;
+    text-align: center;
+    color: #2f6c68;
+    text-shadow: -3px 2px #d28a2d;
+    -webkit-text-stroke: 1px #742e12;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+  .form-container .input-container {
+    grid-column: span 3;
+  }
+  .form-container .input-container:nth-child(1) {
+    grid-row: 1;
+  }
+  .form-container .input-container:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .form-container button,
+.button {
+    padding: 0.8rem;
+  }
+}
+@media (max-width: 710px) {
+  .color-container {
+    padding: 1rem 0;
+    margin-bottom: 6rem;
+  }
+
+  .projects {
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    margin: 2rem auto;
+    font-size: 4rem;
+    text-shadow: -3px 3px #d28a2d, -5px 5px #bfbda2;
+  }
+
+  h2,
+h3 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    text-shadow: -2px 2px #d28a2d, -4px 4px #bfbda2;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .color-container {
+    padding: 1rem 0;
+    margin-bottom: 5rem;
+  }
+
+  .projects {
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    margin: 2rem auto;
+    font-size: 3.2rem;
+  }
+
+  h2,
+h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .about-container .about-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 485px) {
+  h1 {
+    margin: 2rem auto;
+    font-size: 2.8rem;
+    text-shadow: -3px 3px #d28a2d, -5px 5px #bfbda2;
+  }
+
+  h2,
+h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skill-grid li {
+    margin: 0.6em;
+  }
+  .skill-grid li i {
+    font-size: 4.2rem;
+    text-align: center;
+    color: #2f6c68;
+    text-shadow: -3px 2px #d28a2d;
+    -webkit-text-stroke: 1px #742e12;
+  }
+}
+@media (max-width: 410px) {
+  h1 {
+    margin: 2rem auto;
+    font-size: 2.2rem;
+    text-shadow: -3px 3px #d28a2d, -5px 5px #bfbda2;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+  }
+
+  .skill-grid li {
+    margin: 0.5em;
+  }
+  .skill-grid li i {
+    font-size: 4rem;
+  }
+
+  .project h4 {
+    font-size: 1.7rem;
+  }
+
+  .button {
+    margin: 0.5em;
+  }
 }
