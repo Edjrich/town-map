@@ -1,5 +1,9 @@
 // HEADER
 
+.fa-bars {
+    display: none;
+}
+
 h1 {
     margin: 4rem 0;
 }
@@ -67,7 +71,7 @@ h1 {
 
 header {
     // background-color: #050936;
-    min-height: 50vh;
+    min-height: 60vh;
     // color: #F0802C;
     text-align: center;
 }

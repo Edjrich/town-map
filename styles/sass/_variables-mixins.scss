@@ -71,6 +71,15 @@ $primary-font: 'Raleway', sans-serif;
     margin: auto;
 }
 
+.directory-links {
+    @include section-heading();
+    font-size: 1.2rem;
+    // text-decoration: underline;
+    color: #742e12;
+    text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+    padding: 1rem;
+}
+
 h1 {
     @include h1(6rem);
     padding: .1em;

@@ -246,6 +246,20 @@ html {
   margin: auto;
 }
 
+.directory-links {
+  font-size: 3.5rem;
+  letter-spacing: 0.15em;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: 1rem 0;
+  font-size: 1.2rem;
+  color: #742e12;
+  text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+  padding: 1rem;
+}
+
 h1 {
   font-family: "Righteous", cursive;
   color: #742e12;
@@ -376,6 +390,10 @@ a {
   padding: 0.2em;
 }
 
+.fa-bars {
+  display: none;
+}
+
 h1 {
   margin: 4rem 0;
 }
@@ -416,7 +434,7 @@ h1 {
 }
 
 header {
-  min-height: 50vh;
+  min-height: 60vh;
   text-align: center;
 }
 
@@ -690,6 +708,13 @@ h3 {
     text-shadow: -3px 2px #d28a2d;
     -webkit-text-stroke: 1px #742e12;
   }
+  .skill-grid li .devicon-vscode-plain {
+    display: none;
+  }
+
+  .extra-icon {
+    display: none;
+  }
 
   .form-container {
     grid-template-columns: 1fr;
@@ -739,7 +764,45 @@ h3 {
     font-size: 2rem;
   }
 }
+@media (max-width: 650px) {
+  .directory-container {
+    padding: 1rem;
+  }
+
+  .directory-links {
+    font-size: 3.5rem;
+    letter-spacing: 0.15em;
+    font-family: "Righteous", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 1rem 0;
+    font-size: 1rem;
+  }
+}
 @media (max-width: 575px) {
+  .directory-links {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #742e12;
+    text-shadow: -2px 2px 1px #d28a2d, -4px 4px 2px #2f6c68;
+    -webkit-text-stroke: 1px #742e12;
+  }
+
+  .directory-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
   .color-container {
     padding: 1rem 0;
     margin-bottom: 5rem;
@@ -796,6 +859,13 @@ h3 {
     color: #2f6c68;
     text-shadow: -3px 2px #d28a2d;
     -webkit-text-stroke: 1px #742e12;
+  }
+  .skill-grid li .devicon-vscode-plain {
+    display: block;
+  }
+
+  .footer-container p {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 410px) {
