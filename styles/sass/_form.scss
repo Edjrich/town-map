@@ -1,0 +1,50 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+
+    input {
+        width: 100%;
+    }
+
+
+    .textarea {
+        grid-column: 1 / 3;
+        
+        textarea {
+            width: 100%;
+        }
+    }
+
+    .button-container{
+        text-align: center;
+        grid-column: 1 / 4;
+    }
+
+    input,
+    button,
+    textarea {
+        padding: .75em;
+        box-shadow: -5px 5px #d28a2d;
+    }
+
+    button {
+        padding: 1em;
+        margin: 1em;
+        background-color: #d28a2d;
+        color: #742e12;
+        border: none;
+        border-radius: .5em;
+        box-shadow: -5px 5px #2f6c68;
+        font-family: $primary-font;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.215rem;
+    }
+
+    .input-container {
+        padding: .2em;
+    }
+
+}
