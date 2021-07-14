@@ -1,6 +1,7 @@
 // HEADER
 
-.fa-bars {
+.fa-bars,
+.fa-times {
     display: none;
 }
 
@@ -56,6 +57,71 @@ h1 {
     //     // color: #F0802C;
         
     // }
+}
+
+// HAMBURGER 
+
+.hamburger-menu {
+    // position: relative;
+    // width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.menu {
+    display: none;
+    ul {
+        li {
+            padding: 2.2rem;
+        }
+    }
+}
+
+.hamburger-links {
+    @include section-heading();
+    margin: 0;
+    font-size: 1.2rem;
+    // text-decoration: underline;
+    color: #742e12;
+    text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+    padding: .5rem;
+    // display: none;
+}
+
+.hamburger-on,
+.hamburger-off {
+    border: none;
+    background-color: #bfbda2;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    display: none;
+}
+
+.fa-bars,
+.fa-times {
+        display: block;
+        font-size: 2.2rem;
+        text-align: center;
+        color: #742e12;
+        text-shadow: -2px 2px 1px #d28a2d, -4px 4px 2px #2f6c68;
+        -webkit-text-stroke: 1px #742e12;
+    }
+
+.checkbox {
+    border: none;
+    background-color: #bfbda2;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+    // need property for larger size
 }
 
 .scroll-box {
