@@ -390,7 +390,8 @@ a {
   padding: 0.2em;
 }
 
-.fa-bars {
+.fa-bars,
+.fa-times {
   display: none;
 }
 
@@ -423,6 +424,72 @@ h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.menu {
+  display: none;
+}
+.menu ul li {
+  padding: 2.2rem;
+}
+
+.hamburger-links {
+  font-size: 3.5rem;
+  letter-spacing: 0.15em;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: 1rem 0;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #742e12;
+  text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
+  padding: 0.5rem;
+}
+
+.hamburger-on,
+.hamburger-off {
+  border: none;
+  background-color: #bfbda2;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  display: none;
+}
+
+.fa-bars,
+.fa-times {
+  display: block;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #742e12;
+  text-shadow: -2px 2px 1px #d28a2d, -4px 4px 2px #2f6c68;
+  -webkit-text-stroke: 1px #742e12;
+}
+
+.checkbox {
+  border: none;
+  background-color: #bfbda2;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 10;
+  display: none;
 }
 
 .scroll-box i {
@@ -766,7 +833,7 @@ h3 {
 }
 @media (max-width: 650px) {
   .directory-container {
-    padding: 1rem;
+    padding: 1.65rem;
   }
 
   .directory-links {
@@ -785,22 +852,33 @@ h3 {
     display: none;
   }
 
-  .fa-bars {
+  .hamburger-on {
     display: block;
-    font-size: 2.2rem;
-    text-align: center;
-    color: #742e12;
-    text-shadow: -2px 2px 1px #d28a2d, -4px 4px 2px #2f6c68;
-    -webkit-text-stroke: 1px #742e12;
+  }
+
+  input:checked ~ .menu {
+    display: block;
+  }
+
+  input:checked ~ .hamburger-off {
+    display: block;
+  }
+
+  input:checked ~ .hamburger-on {
+    display: none;
+  }
+
+  .checkbox {
+    display: block;
   }
 
   .directory-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .color-container {
