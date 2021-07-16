@@ -34,29 +34,6 @@ h1 {
 .directory {
     display: flex;
     justify-content: space-around;
-
-    // li {
-    //     a {
-    //         // color: black;
-    //         // background-color: white;
-    //         // padding: 1em;
-    //         // margin: 1em;
-    //         // // background-color: #d28a2d;
-    //         // color: #742e12;
-    //         // border-radius: .5em;
-    //         // box-shadow: -5px 5px #2f6c68;
-    //         // // font-family: $primary-font;
-    //         // font-size: 1.2rem;
-    //         // font-weight: 600;
-    //         // text-transform: uppercase;
-    //         // letter-spacing: 0.215rem;
-    //     }
-    // }
-
-    // a {
-    //     // color: #F0802C;
-        
-    // }
 }
 
 // HAMBURGER 
@@ -142,27 +119,6 @@ header {
     text-align: center;
 }
 
-
-// ABOUT
-
-// .box-box {
-//     // box-shadow: -5px 5px 20px #00000071;
-//     // // padding: 5rem 1rem;
-//     // border-radius: 1em;
-//     max-width: 1250px;
-//     margin: 0 auto;
-//     // width: 95%;
-//     background-color: #bfbda2;
-// }
-
-// .about {
-//     padding: 4em 0;
-//     // background-color: #F0E1A8;
-//     // color: #050936;
-//     // background-color: #050936;
-//     // color: #f0e1a8;
-// }
-
 .color-container {
     background-color: #bfbda2;
     max-width: 1400px;
@@ -206,26 +162,6 @@ header {
 
 }
 
-
-
-
-// SKILLS (that will hopefully eventually help pay the bills $_$)
-
-// .skills {
-//     padding: 4rem 0;
-//     // background-color: #050936;
-//     // color: #F0E1A8;
-// }
-
-// .current-skills h3 {
-//     text-align: center;
-//     margin: 1rem auto;
-//     width: 20rem;
-//     border-radius: 1rem 0;
-//     padding: 1.5rem;
-//     background-color: #F0E1A8;
-// }
-
 .skill-grid {
     // background-color: #050936;
     display: grid;
@@ -258,10 +194,6 @@ header {
 .project-text-container h3 {
     text-align: center;
 }
-
-// .project-text-container h3 {
-//     font-size: 3rem;
-// }
 
 .project-container {
     display: grid;
@@ -298,14 +230,6 @@ header {
             font-family: $primary-font;
             
         }
-        // border: 1px solid #2f6c68;
-        // i {
-        //     font-size: 2.5rem;
-        //     color: #2f6c68;
-        //     text-shadow: -1px 1px #d28a2d;
-        //     -webkit-text-stroke: 1px #742e12;
-        //     // text-shadow: -3px 2px #F0802C69;
-        // }
     }
     .link-container {
         text-align: center;
@@ -353,11 +277,6 @@ textarea {
     border: 2.5px solid #2f6c68;
     // box-shadow: #050936 -4px 4px 0px;
 }
-
-// button {
-//     background-color: #050936;
-//     // color: #F0E1A8
-// }
 
 
 // FOOTER
