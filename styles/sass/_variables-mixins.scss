@@ -1,17 +1,8 @@
 // VARIABLES
 
 $header-font: 'Righteous', cursive;
-$sub-header-font: 'Righteous', cursive;
 $primary-font: 'Raleway', sans-serif;
-    // font-family: 'Alfa Slab One', cursive;
 
-    // font-family: 'Allerta Stencil', sans-serif;
-
-    // font-family: 'Nunito', sans-serif;
-
-    // font-family: 'Raleway', sans-serif;
-
-    // font-family: 'Righteous', cursive;
 
 
 
@@ -26,18 +17,11 @@ $primary-font: 'Raleway', sans-serif;
 @mixin h1 ($size) {
     font-family: $header-font;
     color: #742e12;
-
-    // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: $size;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.05em;
     text-shadow: -4px 4px #d28a2d, -7px 7px #bfbda2;
-
-    // color: white;
-    // -webkit-text-stroke: 2px white;
-    // text-shadow: -3px 3px 1px #B22A2E, -6px 6px 1px  dodgerblue, -9px 9px 3px #B22A2E;
-    // text-shadow: -4px 4px 1px  dodgerblue;
 }
 
 @mixin section-heading {
@@ -47,17 +31,8 @@ $primary-font: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-align: center;
     margin: 2rem auto;
-    // width: 20rem;
     border-radius: 1rem 0;
-    // padding: 1.5rem;
-    // background-color: #F0E1A8;
 }
-
-// @mixin sub-header ($size) {
-//     font-family: $header-font;
-//     // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//     text-transform: uppercase;
-// }
 
 
 // SANDBOX
@@ -66,7 +41,6 @@ $primary-font: 'Raleway', sans-serif;
 }
 
 .jumbo-wrapper {
-    // max-width: 1600px;
     width: 95%;
     margin: auto;
 }
@@ -74,59 +48,8 @@ $primary-font: 'Raleway', sans-serif;
 .directory-links {
     @include section-heading();
     font-size: 1.2rem;
-    // text-decoration: underline;
     color: #742e12;
     text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
     padding: 1rem;
 }
 
-h1 {
-    @include h1(6rem);
-    padding: .1em;
-}
-
-h2 {
-    @include h1 (3.5rem);
-    text-shadow: -2px 2px 1px #d28a2d, -4px 4px 2px #2f6c68;
-}
-
-h3 {
-    @include section-heading();
-    color: #742e12;
-    text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
-    // text-decoration: underline;
-    // text-shadow: -2px 2px #F0802C, -4px 4px 1px  #B52737, -6px 6px 1px #D35E5433, -8px 8px #F0E1A811;
-    // text-shadow: -5px 5px #B52737;
-    // text-shadow: -6px 6px 1px #D35E54;
-}
-
-h4 {
-    color: #742e12;
-    text-shadow: -1px 2px #d28a2d, -3px 4px #2f6c68;
-    font-size: 3.5rem;
-    letter-spacing: .15em;
-    font-family: $header-font;
-    text-transform: uppercase;
-    text-align: center;
-    // text-shadow: -2px 2px black;
-}
-
-p {
-    font-family: $primary-font;
-    font-size: 1.2rem;
-}
-
-
-.button {
-    padding: 1em;
-    margin: 1em;
-    background-color: #d28a2d;
-    color: #742e12;
-    border-radius: .5em;
-    box-shadow: -5px 5px #2f6c68;
-    font-family: $primary-font;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.215rem;
-}
