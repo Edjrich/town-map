@@ -492,14 +492,6 @@ h1 {
   display: none;
 }
 
-.scroll-box i {
-  margin: 5rem 0;
-  font-size: 5rem;
-  text-align: center;
-  color: #742e12;
-  text-shadow: 0px -4px 5px #d28a2d, 0px -6px 1px #bfbda2;
-}
-
 header {
   min-height: 60vh;
   text-align: center;

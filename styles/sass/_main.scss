@@ -1,4 +1,4 @@
-// HEADER
+        // HEADER
 
 .fa-bars,
 .fa-times {
@@ -36,7 +36,7 @@ h1 {
     justify-content: space-around;
 }
 
-// HAMBURGER 
+        // HAMBURGER 
 
 .hamburger-menu {
     // position: relative;
@@ -59,11 +59,9 @@ h1 {
     @include section-heading();
     margin: 0;
     font-size: 1.2rem;
-    // text-decoration: underline;
     color: #742e12;
     text-shadow: -3px 3px #d28a2d, -6px 6px #bfbda2;
     padding: .5rem;
-    // display: none;
 }
 
 .hamburger-on,
@@ -98,24 +96,10 @@ h1 {
     opacity: 0;
     z-index: 10;
     display: none;
-    // need property for larger size
-}
-
-.scroll-box {
-    i {
-        margin: 5rem 0;
-        font-size: 5rem;
-        text-align: center;
-        color: #742e12;
-        text-shadow: 0px -4px 5px #d28a2d, 0px -6px 1px #bfbda2 ;
-        // -webkit-text-stroke: 1px #742e12;
-        }
 }
 
 header {
-    // background-color: #050936;
     min-height: 60vh;
-    // color: #F0802C;
     text-align: center;
 }
 
@@ -131,13 +115,8 @@ header {
 }
 
 .about-container {
-    // padding: 2em 0;
     display: flex;
     justify-content: space-between;
-    // background-color: #bfbda2;
-    // box-shadow: -5px 5px 20px #00000071;
-    // padding: 5rem 1rem;
-    // border-radius: 1em;
 
     .about-image {
         display: flex;
@@ -145,16 +124,15 @@ header {
         width: 48%;
         margin-right: 1rem;
 
-    img {
-        border-radius: 1em;
-        // box-shadow: -5px 5px 10px #d28a2d;
-        box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
-        // height auto fixes SMUSH
-    }
+        img {
+            border-radius: 1em;
+            box-shadow: -5px 5px 2px #742e12, -10px 10px 5px #d28a2d, -15px 15px 10px #2f6c68;
+        }
     }
 
     .about-text {
         width: 50%;
+
         p {
             margin: 1rem 0;
         }
@@ -163,10 +141,10 @@ header {
 }
 
 .skill-grid {
-    // background-color: #050936;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+
     li {
         text-align: center;
         align-self: center;
@@ -183,12 +161,10 @@ header {
     }
 }
 
-// PROJECTS 
+        // PROJECTS 
 
 .projects {
     margin-bottom: 10rem;
-    // background-color: #F0E1A8;
-    // color: #050936;
 }
 
 .project-text-container h3 {
@@ -205,8 +181,6 @@ header {
 .project {
     box-shadow: 1px 1px 10px #00000071;
     background-color: #bfbda2;
-    // color: #F0E1A8;
-    // min-height: 22rem;
     border-radius: 1em;
     padding: 1.5em 0;
 
@@ -224,29 +198,28 @@ header {
         display: flex;
         justify-content: space-evenly;
         padding: 1em;
+        
         li {
-            // border: 1px solid #2f6c68;
             padding: 1em;
             font-family: $primary-font;
             
         }
     }
+
     .link-container {
         text-align: center;
         padding: 1em 0;
     }
 }
 
-// CONTACT
+        // CONTACT
 
 .contact {
-    // background-color: #F0E1A8;
     color: #050936;
 }
 
 .contact-container {
     box-shadow: -5px 5px 20px #00000071;
-    // padding: 5rem 1rem;
     border-radius: 1em;
     max-width: 1250px;
     margin: 2rem auto;
@@ -268,14 +241,7 @@ header {
 input,
 textarea {
     background-color: #bfbda2;
-    // color: #F0E1A8;
-    // border-bottom: 3px solid #050936;
-    // background-color: #F0E1A8;
-    // border: none;
-    // border-left: 2px solid #2f6c68;
-    // border-bottom: 2px solid #2f6c68;
     border: 2.5px solid #2f6c68;
-    // box-shadow: #050936 -4px 4px 0px;
 }
 
 
@@ -286,8 +252,7 @@ textarea {
     background-color: #bfbda2;
     padding: 1rem;
     border-radius: 1em 1em 0 0;
-    // max-width: 1400px;
-    // margin: 0 auto;
+
     p {
         color: #742e12;
         text-shadow: -1px 1px #d28a2d, -2px 2px #2f6c68;
@@ -302,6 +267,5 @@ textarea {
 
 html {
     background-color: #2f6c68;
-    // color: #050936;
 }
 
