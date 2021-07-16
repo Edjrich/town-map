@@ -260,6 +260,29 @@ html {
   padding: 1rem;
 }
 
+html {
+  font-size: 125%;
+  background-color: #2f6c68;
+}
+
+*, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Righteous", cursive;
   color: #742e12;
@@ -322,28 +345,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.215rem;
-}
-
-html {
-  font-size: 125%;
-}
-
-*, h1 {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 .form-container {
@@ -649,10 +650,6 @@ textarea {
   font-family: "Righteous", cursive;
   text-transform: uppercase;
   text-align: center;
-}
-
-html {
-  background-color: #2f6c68;
 }
 
 @media (max-width: 1200px) {
