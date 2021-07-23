@@ -589,6 +589,9 @@ header {
 .project p {
   padding: 1.5em 0.7em;
 }
+.project p a {
+  color: inherit;
+}
 .project .project-list {
   display: -webkit-box;
   display: -ms-flexbox;
